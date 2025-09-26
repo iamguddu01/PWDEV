@@ -1,0 +1,30 @@
+.b1{
+    background-color: pink;
+    float: right;  /*It will fix content in right position*/
+    height: 400px;
+    width: 45%;
+    margin-right: 30px;
+}
+.b2{
+    background-color: greenyellow;
+    float: left;  /*It will fix content in left position*/
+    height: 400px;
+    width: 45%;
+    margin-left: 30px;;
+    
+}
+/* div{
+    display: inline;
+    display: inline-block;    it will not set in block or inline it will give fix size 
+    display: none;    it will remove the content from screen but not from html It will not reserve the space also 
+    visibility:hidden;  It will hide the content but also reserve the space 
+    } */
+span{
+    background-color:aqua;
+    display: block;
+    
+    
+}
+.ul{
+    float: inline-end;
+}

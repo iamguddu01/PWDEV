@@ -1,0 +1,44 @@
+button:active{
+    color: blueviolet;
+    background-color: brown;
+}
+/* Hover you know */
+a:hover{
+    background-color: crimson;
+}
+/* when will active by clicking or blaa blaa */
+a:active{
+    color: orange;
+}
+/* For visited links */
+a:visited{
+    color: black;
+}
+/* for not visiret link */
+a:link{
+    color: red;
+}
+/* it will color red every third div */
+div:nth-child(3n){
+    color: red;
+} 
+div:first-child{
+    color: brown;
+}
+div:last-child{
+    color: pink;
+}
+div:nth-child(4){
+    color: mediumseagreen;
+}
+/* It will work on parent has 10 child then first will be colored */
+div:first-of-type{
+    color: blue;
+}
+
+input[type="checkbox"]:checked{
+    outline: 10px solid pink;
+}
+input:checked + label{
+    color: blueviolet;
+}   

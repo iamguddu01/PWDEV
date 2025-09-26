@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    background: #333;
+    padding: 10px;
+    justify-content: space-around;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color .5s;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: large;
+}
+.navbar a:hover{
+    color: dodgerblue;
+    transform:scale(1.6);
+}

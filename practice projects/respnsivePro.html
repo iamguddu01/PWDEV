@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        *{
+            margin: 0;
+        }
+         .container{
+            display: grid;
+            grid-template-areas: 'header header header header header header',
+                                 'leftbar main main main main rightbar',
+                                 'footer footer footer footer footer footer';
+            gap: 10px;
+            padding: 20px;
+        }
+        .container > div{
+            padding: 20px;
+            margin: 15px;
+            border: 1px solid black;
+            height: 100vh;
+            width: 100vw;
+        }
+        div{
+            border: 1px solid black;
+        }
+        .div1{
+           grid-area:header;
+           margin: 20px;
+           padding-bottom: 20px;
+        }
+        li{
+            margin: 20px;
+            padding: 20px;
+        }
+        .div2 {
+            grid-area:leftbar;
+            margin: 20px;
+            padding: 30px;
+        }
+        .div3{
+           grid-area:main;
+           margin: 20px;
+           padding: 30px;
+        }
+        .div4{
+          grid-area:rightbar;
+          margin: 20px;
+          padding: 20px;
+        }
+        .div5{
+            grid-area:footer;
+            margin: 20px;
+            padding: 30px;
+        }
+        li{
+           list-style-type: none;
+        }
+       
+    </style>
+</head>
+<body>
+   
+<div class="container">
+    <div class="div1">
+    <h1>Header</h1>
+    </div>
+
+   <div class="div2">
+    <h2>leftbar items</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item2</li>
+        <li>Item 3</li>
+    </ul>
+   </div>
+
+   <div class="div3">
+    <h1>content heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Teme ab est.</p>
+   </div>
+
+   <div class="div4">
+    <h2>content heading rightbar </h2>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ul>
+   </div>
+
+   <div class="div5">footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat repudiandae minus facilis deserunt dolore eum quis molestiae delectus iste, beatae, rerum ipsam!</div>
+</div>
+</body>
+</html>

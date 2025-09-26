@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: box-shadow .5s, transform .5s;
+
+        }
+        .card:hover{
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+            transform: translateX(100px); /* Use minux px value to translate in left and use positive to move in right direction in X axis and use translate Y to scale in up down direction */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        Hover Me!
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+        border: 1px solid black;
+        padding: 12px;
+        margin: 12px 0;
+        min-height: 120px;
+      }
+      .box {
+        padding: 12px;
+        border: 1px solid black;
+        background: #eee;
+        min-height: 100px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Overflow & z-index</h1>
+
+    <div class="exercise">
+        <!-- default behaviour -->
+        <div class="demo">
+            <strong>Overflow: default</strong>
+
+            <div style="width: 220px; height: 60px; border: 1px solid #aaa; overflow: visible;">
+                <div style="background: #ffd; border: 6px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odio?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error.</div>
+            </div>
+        </div>
+    </div>
+
+     <h1>Overflow & z-index</h1>
+
+    <div class="exercise">
+        <!-- hide your overflow  -->
+        <div class="demo">
+            <strong>Overflow: hidden</strong>
+
+            <div style="width: 220px; height: 60px; border: 1px solid #aaa; overflow: hidden;">
+                <div style="background: #ffd; border: 6px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odio?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error.</div>
+            </div>
+        </div>
+    </div>
+
+     <h1>Overflow & z-index</h1>
+
+    <div class="exercise">
+        <!-- scroll behaviour -->
+        <div class="demo">
+            <strong>Overflow Y axis scrollbar: scroll</strong>
+
+            <div style="width: 220px; height: 60px; border: 1px solid #aaa; overflow:scroll;">
+                <div style="background: #ffd; border: 6px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, odio?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, error.</div>
+            </div>
+        </div>
+    </div>
+
+<!-- Horizontal overflow scroll -->
+    <div>
+        <strong>Horizontal Scroll</strong>
+    </div>
+
+    <div style="display: flex; overflow-x: scroll; border: 1px solid #000; gap: 10px;">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+          <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+         <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+         <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+         <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+         <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+         <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+         <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+         <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div> 
+    </div>
+</body>
+</html>

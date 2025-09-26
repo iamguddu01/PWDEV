@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Styling</title>
+    <style>
+        .btn-gradient{
+            padding: 12px 28px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            background: linear-gradient(100deg, #d741bb, #2575fc);
+            color: white;
+            transition: all .5s ease-in;
+           
+        }
+         .btn-gradient:hover{
+            opacity: .8;
+            box-shadow: 2px 6px 9px rgba(0, 0, 0, .6);
+         }
+        .learn{
+            padding: 12px 28px;
+            border-radius: 10px;
+            background: transparent;
+            font-size: 16px;
+            transition: all .5s ease;
+        }
+        .learn:hover{
+            background: black;
+            color: white;
+        }
+        .search{
+            padding: 12px 28px;
+            border: none;
+            background: linear-gradient(90deg, blue, red);
+            color: white;
+            transition: all .5s;
+            margin: 20px;
+            border-radius: 15px;
+        }
+        .search:hover{
+            transform: scale(1.2);
+        }
+        .loader{
+            padding: 12px 30px;
+            border: none;
+            background: rgb(43, 112, 232);
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .loader::after{
+            content: '';
+            border: 3px solid white;
+            border-top: solid transparent;
+            width: 15px;
+            height: 15px;    
+            border-radius: 50%;
+            animation: spin .1s linear infinite;
+        }
+        @keyframes spin {
+            to {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-gradient">Click Me !</button><br><br><br>
+    <button class="learn">Learn More</button><br><br><br>
+    <button class="search">🔎 Search</button><br><br><br>
+    <button class="loader">Loading</button>
+</body>
+</html>
