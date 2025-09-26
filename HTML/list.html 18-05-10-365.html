@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list direction</title>
+    <style>
+    
+        th{
+            background-color: blueviolet;
+        
+        }
+        tr, td{
+             background-color: rgb(42, 173, 173);
+            margin: 15px;
+            border: 2px solid black;
+            color: white;
+        }
+        table{
+            width: 100%;
+            height: 200px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="align-items: center;">I want to be in centre</h1>
+    <span style="align-items: center;">I want to be in centre</span>
+    <blockquote>
+        Hii I am a Quote tag check me in code iam adding a additional tab space or indent 
+    </blockquote>
+    <!-- unordered list -->
+    <ul style="list-style-type: square;">  <!--Changing bullet poin style-->
+        <li>tea</li>
+        <li>coffeee</li>
+        <li>cake</li>
+    </ul>
+    <!-- ordered list -->
+    <ol type="1" start="5">    <!--changing numbering type and starting by choice-->
+        <li>cola</li>
+        <li>bhola</li>
+        <li>golaaa</li>
+    </ol>
+    <!-- Definition list -->
+    <dl>
+        <dt><b>juice</b></dt>
+        <dd>It was so sweet</dd>
+        <dt><i>chillli</i></dt>
+        <dd>its too hot</dd>
+    </dl>
+
+    <ol style="list-style: none;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <ol type="a">
+            <li>Black Tea</li>
+            <li>Green tea</li>
+            <ol>
+                <li>barcelona</li>
+                <li>EREN YEAGER</li>
+                <li>YOYO</li>
+                
+            </ol>
+        </ol>
+        <li>Juice</li>
+        <li>Sandwich</li>
+    </ol>
+
+    <!-- Table -->
+     <table>
+        <thead>
+         <tr>
+            <th style="width: 50%;">Name</th>
+            <!-- <th>Id</th>
+            <th>contact</th> -->
+            <th colspan="2"> Unique User Values</th>. <!--Merging 2 columns using colspan-->
+        </tr>
+        </thead>
+        
+    <tbody>
+         <tr>
+            <td rowspan="2">Govind</td> <!--Merging 2 rows-->
+            <td>1123011</td>
+            <td>Govind@mail.com</td>
+        </tr>
+
+        <tr>
+            <!-- <td>Rohit</td> -->.   <!--Merging 2 rows by deleting this data to not interrupt in table -->
+            <td>1123012</td>
+            <td>Rohit@mail.com</td>
+        </tr>
+
+        <tr>
+            <td>Subahsh</td>
+            <td>1120334</td>
+            <td>Subhu@mail.com</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr></tr>
+    </tfoot>
+     </table>
+</body>
+</html>

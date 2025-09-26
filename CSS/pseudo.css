@@ -1,0 +1,25 @@
+/* These type of classes called PSEUDO classes */
+a:hover{
+    color: red;
+}
+input:focus{
+    border: 10px solid rgb(8, 244, 8);
+}
+
+/* PSEUDO elements example */
+p::first-letter{
+    color: red;
+    font-size: 2em;
+}
+p::after{
+    content:" 😌";
+}
+#itm{
+    color: red;
+}
+ul:first-child li:first-child{
+    color: red;
+}
+ul:last-child li:last-child{
+    color: red;
+}

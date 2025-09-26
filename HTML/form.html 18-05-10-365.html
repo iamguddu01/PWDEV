@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <label>First Name</label>
+        <input type="text" placeholder="Enter first name" >
+        <label for="">Last name</label>
+        <input type="text" placeholder="Enter last name">
+        <div>
+            <label for="">Age</label>
+            <input type="number" placeholder="Enter age" min="18" step="4">
+        </div>
+        <!-- Password  -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Pass" id="password">
+        </div>
+        <!-- Creating radio buttons -->
+        <div>
+            <label for="">Gender</label>
+            <input type="radio" value="Male" name="gender">Male
+            <input type="radio" value="Female" name="gender">Female   <!--To select only one property we are grouping them by name property-->
+        </div>
+        <!-- Creating CHeckbox -->
+        <div>
+            <label for="">Select subject</label>
+            <input type="checkbox" value="Hindi" name="sub">Hindi
+            <input type="checkbox" value="English" name="sub">English
+            <input type="checkbox" value="Maths" name="sub">Maths
+            <input type="checkbox" value="Social studies" name="sub">Social studies
+            <input type="checkbox" value="Bio" name="sub">Biology
+        </div>
+        <!-- Text box -->
+        <div>
+            <label for="">Description</label>
+            <textarea name="Enter your boi" id="Description" placeholder="Enter here" cols="30" rows="10" maxlength="15" readonly>Hii you have to write like that </textarea> <!-- i have used readonly property that will not allow to user to write-->
+        </div>
+
+        <!-- Creating dropdown menu -->
+        <div>
+            <label for="countrySelectBox">Countries</label>
+            <select name="country" id="">
+            <option value="india">India</option>
+            <option value="russia">Russia</option>
+            <option value="User">US</option>
+            <option value="japan">Japan</option>
+            <option value="nepal">Nepal</option>
+            </select>
+        </div>
+
+        <!-- Grouped dropdown -->
+         <select name="" id="">
+         <optgroup label="German cars">
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+         </optgroup>
+         <optgroup label="Japanese cars">
+            <option value="nissan">Nissan</option>
+            <option value="honda">Honda</option>
+         </optgroup>
+         <optgroup label="Indian cars">
+            <option value="mahindra">mahindra</option>
+            <option value="maruti">Maruti</option>
+         </optgroup>
+         </select>
+
+         <!-- Buttons -->
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="button">IamButton</button>
+    </form>
+</body>
+</html>

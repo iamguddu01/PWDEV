@@ -1,0 +1,12 @@
+ul{
+    background-color: black;
+}
+li:nth-child(odd){
+color: aqua;
+}
+li:nth-child(even){
+color: pink;
+}
+li:nth-child(5){
+    color: red;
+}

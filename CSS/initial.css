@@ -1,0 +1,39 @@
+/* Element Selector */
+h1{
+    font-size: 60px;
+    color: yellow;
+    text-align: center;
+}
+p{
+    color: violet;
+}
+
+/*This is css using ID attribute*/
+/* ID selector */
+#secondHead{    
+    color: red;
+    font-size: 30px;
+}
+#secondPara{
+    color: green;
+}
+/* We can use comma and add in multiple classes and id  */
+/*This is css using Class attribute*/
+/* Class selector */
+.super,.notsup{
+    color: tomato;
+    font-size: 40px;
+    text-align: center;
+}
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Grouping Selector */
+/* h1,p{
+    color: aqua;
+    font-size: 55px;
+} */
+
