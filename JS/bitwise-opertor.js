@@ -15,3 +15,12 @@ console.log(9 ^ 8); // If any one bit is 1 than ans is 1,
 
 // Bitwise NOT
 console.log(~5);   // Turns 1 to 0, 0 to 1. 
+
+/* -128 -> +127
+MSB -> (Most significant bit) */
+
+
+/* -4 -> Binary representation 
+1) Identify the binary representation of its positive form 
+2) invert all the off -> on, on -> off (0 -> 1, 1 -> 0)
+3) Add 1 to the result */
