@@ -26,7 +26,7 @@ const rsstr = str.reduceRight((acc, curr) => {
 })
 
 
-
+// Flatend Dsa question 
 let nestedArr = [[1,2],[3,4],[5,6]];
 const rs = nestedArr.reduce((acc, curr)=> {
     // console.log(acc);
@@ -38,3 +38,36 @@ const rs = nestedArr.reduce((acc, curr)=> {
 console.log(rs);
 
 
+// Every function 
+// If all the condition is true than true but if one element is false than ans will false
+let brr = [2,4,6,8];
+
+function isEven(brr){
+   return brr.every((e) => {  // returning true false
+        return e % 2 == 0 ;
+    });
+}
+console.log(isEven(brr));
+
+function arePos (brr){
+    return brr.every((e) => e >0);
+}
+console.log(arePos(brr));
+
+
+
+// some function 
+// If atleast one ans will True the final ans will be true 
+
+function isAtleastOneNeg(brr){
+    return brr.some((e) => e < 0); // Returning true false
+}
+console.log(isAtleastOneNeg(brr));
+
+
+let marks1 = [40,50,55,43,67];
+let marks2 = [54,50,55,73,67];
+function isPass(marks){
+    return marks.every((e) => e >= 50);
+}
+console.log(isPass(marks2));
