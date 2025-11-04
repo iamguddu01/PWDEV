@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener 1</title>
+</head>
+<body>
+    <!-- <button onclick="alert('The button is clicked')">Click me !</button> -->
+     <button>click me</button>
+     <!-- <input type="text" onfocus="alert('Input box selected')"> -->
+     <input type="text">
+
+     <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, a?</div>
+</body>
+
+<script>
+    // const btn = document.querySelector('button');
+    // btn.onclick = () => {
+    //     alert("Button clicked by js script")  // 2nd way through JS script
+    // }
+    // const inp = document.querySelector('input');
+    // inp.addEventListener('focus', () => {
+    //     alert("Input box selected!")
+    // })
+    // inp.addEventListener('blur', () => {
+    //     alert("Input box unselected!")
+    // })
+    const div = document.querySelector('div');
+    div.addEventListener('mouseover', () => {
+        div.style.color = "red";
+    })
+    div.addEventListener('mouseout', () => {
+        div.style.color = "black";
+    })
+</script>
+</html>

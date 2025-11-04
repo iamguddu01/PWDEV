@@ -1,0 +1,1 @@
+// node list return by querySelector and its stactic and the updated things wil be get if we fetch it by query selector
