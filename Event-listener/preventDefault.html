@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent Default</title>
+</head>
+<body>
+    <form id="myform">
+        <input type="text" placeholder="Your Name" name="name">
+        <button type="submit">submit</button>
+    </form>
+
+    <a id="anchor" href="https://google.com">Goto google</a>
+    <script>
+       document.getElementById('myform').addEventListener("submit", (event) => {
+            event.preventDefault(); // Stops form submission and page reload or stopping behaviour of form
+            console.log("Form submission stoppped !!", event);
+       });
+
+       document.getElementById('anchor').addEventListener('click', (event) => {
+        event.preventDefault();  // Stop redirection...
+        console.log("Navigation prevented");
+       });
+    </script>
+</body>
+</html>

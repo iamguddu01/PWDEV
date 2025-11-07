@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+</head>
+<body>
+   <div id="grandParent">
+     <div id="parent">
+        <button id="child">click me</button>
+    </div>
+   </div>
+    <script>
+        const parentDiv = document.getElementById('parent');
+        const childBtn = document.getElementById('child');
+        const grandParent = document.getElementById('grandParent');
+
+        grandParent.addEventListener('click', () => {
+            console.log("Grand Parent clicked !");
+        });
+        parentDiv.addEventListener('click', () => {
+            console.log("Parent div clicked !");
+        });
+
+        childBtn.addEventListener('click', () => {
+            console.log("Child button clicked !");
+            event.stopPropagation();   // Stop bubbling effect !! If we remove the it all listener will work because of bubbling!
+        });
+    </script>
+</body>
+</html>

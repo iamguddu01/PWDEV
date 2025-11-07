@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event capturing</title>
+</head>
+<body>
+   <div id="grandParent">
+     <div id="parent">
+        <button id="child">click me</button>
+    </div>
+   </div>
+    <script>
+        const parentDiv = document.getElementById('parent');
+        const childBtn = document.getElementById('child');
+        const grandParent = document.getElementById('grandParent');
+
+        grandParent.addEventListener('click', () => {
+            console.log("Grand Parent clicked !");
+        },true);        // Because of true now its not bubbling its capturing opposite of bubbling first grandparent, then parent then child
+
+
+        parentDiv.addEventListener('click', () => {
+            console.log("Parent div clicked !");
+            event.stopPropagation();        // Now because propagation child will not execute it will stop after parent...
+        },true);
+
+
+        childBtn.addEventListener('click', () => {
+            console.log("Child button clicked !");
+        },true);
+    </script>
+</body>
+</html>
