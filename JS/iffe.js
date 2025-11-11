@@ -1,3 +1,4 @@
+// IFFE fucntion runs immediately 
 (() => {
     console.log("Hello!");
 })();

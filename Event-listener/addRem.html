@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">click</button>
+    <script>
+        const button = document.getElementById('btn');
+
+        function showMessage() {
+
+        }
+        // Add event listener 
+        button.addEventListener('click', showMessage);
+
+        // Remove event listener 
+        button.removeEventListener('click', showMessage);
+
+        // 3rd way
+        const showMessage = function (){  // It has reference so it will be valid
+            console.log("hello");
+        }
+
+        // 4th way
+        const message = () => {      // It has reference so it will be valid
+            console.log("Hello !");
+        }
+
+        // Wrong way
+        button.addEventListener('click', () => {
+            console.log("hello!");
+        });
+
+        button.removeEventListener('click', () => {
+            console.log("hello!");
+        });
+
+        // One time listeners 
+        button.addEventListener('click', () => {
+            console.log("Run Once !!");  
+        },{once : true});     // Listener will work only one time
+    </script>
+</body>
+</html>
