@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgb(202, 230, 255);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+    padding: 3rem;
+}
+h1{
+    color: rgb(48, 48, 44);
+    margin-bottom: 3rem;
+}
+.inpContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+input[type='text']{
+    width: 70%;
+    border-radius: 6px;
+    text-align:start;
+    height: 25px;
+    margin-bottom: 1rem;
+    font-size: 17px;
+    border: 1px solid #ccc;
+}
+button{
+    width: 60%;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: background-color .3s;
+    font-size: 1rem;
+}
+button:hover{
+    background-color: rgb(54, 157, 54);
+}
+.resultContainer{
+    height:350px;
+    min-height: 350px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#qr-image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.spinner{
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 100%;
+    animation: spin linear 1s infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.placeholder-text{
+    font-size: 1rem;
+    color: #999;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 0 1rem;
+}

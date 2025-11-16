@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR GENERATOR</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <div class="inpContainer">
+            <input type="text" id="qr-input" placeholder="Enter text or URL.">
+            <button id="generate-btn">Generate QR code</button>
+        </div>
+
+            <div class="resultContainer" id="qr-result" >
+                <div class="placeholder-text" id="placeholder-text">Type text, number or enter URL and hit generate button to generate QR Code</div>
+                <div id="preloader" class="preloader" style="display: none;">
+                    <div class="spinner"></div>
+                </div>
+                <img id="qr-image" src="" alt="QR Code" style="display: none;">
+            </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
