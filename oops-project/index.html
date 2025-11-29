@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Management System</title>
 </head>
+<link rel="stylesheet" href="./style.css">
 <body>
-    
+    <div class="container">
+    <h1>🎓 Student Management System (OOP in JS)</h1>
+
+    <div class="form-group">
+      <input type="text" id="name" placeholder="Student Name" />
+      <input type="number" id="marks" placeholder="Marks" />
+      <select id="course">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Data Structures">Data Structures</option>
+      </select>
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Marks</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="studentTable"></tbody>
+    </table>
+  </div>
+<script src="oops-mini.js"></script>
 </body>
 </html>
