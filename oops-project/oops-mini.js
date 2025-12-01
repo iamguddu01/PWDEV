@@ -73,7 +73,6 @@ function addStudent() {
 
 function deleteStudent(index){
     manager.remove(index);
-
     renderTable();
 }
 
