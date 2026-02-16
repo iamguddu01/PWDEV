@@ -18,7 +18,7 @@ p::after{
     color: red;
 }
 ul:first-child li:first-child{
-    color: red;
+    color: rgb(84, 255, 11);
 }
 ul:last-child li:last-child{
     color: red;

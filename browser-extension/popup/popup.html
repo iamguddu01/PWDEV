@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Productivity Dashboard</h2>
+
+        <!--Promodoro section-->
+        <section>
+            <div class="section-header">
+                <h3>Pomodoro</h3>
+                <span class="badge">Focus</span>
+            </div>
+            <div class="field-row pomo-row">
+                <input id="pomo_inp" type="number" min="1" value="25" aria-label="Pomodoro minutes">
+                <button class="green" id="timer-start">Start</button>
+                <button class="red" id="timer-stop">Stop</button>
+            </div>
+            <div class="quick-buttons-row">
+                <button class="chip-btn" data-minutes="5">5m</button>
+                <button class="chip-btn" data-minutes="15">15m</button>
+                <button class="chip-btn" data-minutes="30">30m</button>
+                <button class="chip-btn" data-minutes="45">45m</button>
+            </div>
+            <p id="timer-display" class="muted">Time left: 00:00</p>
+        </section>
+        <!-- Block sites section -->
+        <section>
+            <div class="section-header section-header--block">
+                <h3>Block Sites</h3>
+                <div class="toggle-row">
+                    <span class="badge">Distraction-free</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="block-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="field-row">
+                <input id="block-input" type="text" placeholder="e.g. instagram.com" aria-label="Domain to block">
+                <button class="accent" id="block-add-btn">Block</button>
+            </div>
+            <ul id="blocked-website-list"></ul>
+        </section>
+
+        <!-- Usage stats section -->
+        <section>
+            <div class="section-header">
+                <h3>Usage Stats</h3>
+                <span class="badge">Live</span>
+            </div>
+            <ul id="usage-list">
+            </ul>
+        </section>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

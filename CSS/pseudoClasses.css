@@ -1,4 +1,4 @@
-button:active{
+.checkbox:active{
     color: blueviolet;
     background-color: brown;
 }

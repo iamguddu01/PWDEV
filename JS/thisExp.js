@@ -5,7 +5,7 @@ console.log(this);  // {}
 const person = {
     name: "dewansh",
     greet: () => {
-        console.log("Hello ", this.name);   // Hello undefined
+        console.log("Hello ", person.name, 78);   // Hello undefined
         this.name = "pratyaksh";
     }
 }
